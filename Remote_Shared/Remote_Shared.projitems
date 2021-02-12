@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{993C8A00-79A1-4EA8-8F40-E6CEF2F9E5F9}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Remote_Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Adapter\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Communication\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Communication\Socket\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Communication\HTTP\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Adapter\HomeAdapter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Communication\Socket\UDPSocket.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Communication\HTTP\HTTPClient.cs" />
+  </ItemGroup>
+</Project>

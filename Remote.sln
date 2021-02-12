@@ -1,0 +1,19 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Remote_Android", "Remote\Remote_Android.csproj", "{EC847B47-CF47-4145-BB4E-DD6BE28EF223}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Remote_Shared", "Remote_Shared\Remote_Shared.shproj", "{993C8A00-79A1-4EA8-8F40-E6CEF2F9E5F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC847B47-CF47-4145-BB4E-DD6BE28EF223}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC847B47-CF47-4145-BB4E-DD6BE28EF223}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC847B47-CF47-4145-BB4E-DD6BE28EF223}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC847B47-CF47-4145-BB4E-DD6BE28EF223}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

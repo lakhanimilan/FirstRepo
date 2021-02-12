@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation = "vertical"
+        android:background = "@color/cardview_light_background"
+        android:layout_marginTop="10dp"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin ="10dp"
+            android:id="@+id/txt_port"
+            android:hint= "Enter Listening Port"
+            android:inputType = "number"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/btn_listening"
+            android:text="Start Listening"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation = "vertical"
+        android:background = "@color/cardview_light_background"
+        android:layout_marginTop = "20dp"
+        android:id="@+id/view_ipdetails"
+        android:visibility = "visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IP : "
+            android:layout_marginTop = "10dp"
+            android:layout_marginLeft = "10dp"
+            android:id="@+id/txt_ip"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity = "center_horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/btn_on"
+                android:text="Swith On"
+                android:layout_margin = "5dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/btn_off"
+                android:text="Switch Off"
+                android:layout_margin = "5dp"/>
+        </LinearLayout>    
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Response : "
+            android:layout_marginTop = "10dp"
+            android:layout_marginLeft = "10dp"
+            android:id="@+id/txt_resp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background = "@color/cardview_light_background"
+        android:layout_marginTop = "20dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logs:"
+            android:id="@+id/txt_log"/>
+
+    </LinearLayout>
+                 
+
+
+</LinearLayout>
